@@ -2,7 +2,7 @@ package com.bridgelabz.moodanalyzer;
 public class MoodAnalyzerException extends RuntimeException
 {
     enum ExceptionType {
-        NULL
+        NULL,EMPTY;
     }
     ExceptionType type;
 
