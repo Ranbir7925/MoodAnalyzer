@@ -22,4 +22,12 @@ public class MoodAnalyzerTest
         String moodState = moodAnalyzer.analyzeMood("I am in Happy Mood");
         Assert.assertEquals("HAPPY",moodState);
     }
+
+    @Test
+    public void testAnyMood()
+    {
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
+        String moodState = moodAnalyzer.analyzeMood("I am in Any Mood");
+        Assert.assertEquals("HAPPY",moodState);
+    }
 }
