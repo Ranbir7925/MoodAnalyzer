@@ -18,16 +18,16 @@ public class MoodAnalyzerTest
     @Test
     public void testHappyMood()
     {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String moodState = moodAnalyzer.analyzeMood("I am in Happy Mood");
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in Happy Mood");
+        String moodState = moodAnalyzer.analyzeMood();
         Assert.assertEquals("HAPPY",moodState);
     }
 
     @Test
     public void testAnyMood()
     {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String moodState = moodAnalyzer.analyzeMood("I am in Any Mood");
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in Any Mood");
+        String moodState = moodAnalyzer.analyzeMood();
         Assert.assertEquals("HAPPY",moodState);
     }
 }
